@@ -1,22 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html  lang="en-US">
 <head>
 	<title>Kai Boenke</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="keywords" content="boenke" />
-	<meta name="description" content="Personal Website of Kai Boenke." />
-	<meta name="lang" content="en" />
-	<meta name="generator" content="Sublime Text" />
-	<meta name="author" content="Kai Boenke, Three14 LLC" />
-	<meta name="design" content="Kai Boenke, Three14 LLC" />
-	<meta name="copyright" content="© 2023 Three14 LLC" />
-	<meta name="robots" content="noindex, nofollow" />
-	<meta name="revised" content="Thu Feb 02 2023 10:31:41 GMT+0100" />
-	<meta last-modified="Tue Mar 14 2023 14:23:35 GMT+0100" />
+	<meta name="keywords" content="boenke">
+	<meta name="description" content="Personal Website of Kai Boenke.">
+	<meta name="lang" content="en-US">
+	<meta name="generator" content="Sublime Text">
+	<meta name="author" content="Kai Boenke, Three14 LLC">
+	<meta name="design" content="Kai Boenke, Three14 LLC">
+	<meta name="copyright" content="© 2023 Three14 LLC">
+	<meta name="robots" content="noindex, nofollow">
+	<meta name="revised" content="Wed Mar 15 2023 10:13:21 GMT+0100">
+	<meta name="color-scheme" content="dark">
+	<meta name="theme-color" content="#ffffff">
+	<meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-	<meta http-equiv="cache-control" content="public, max-age=604800, immutable" />
-	<meta charset="UTF-8">
-	<link rel="icon" type="image/vnd.microsoft.icon" href="" />
 	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.2.min.js"></script>
 	<script>
 		var feedData = [];
@@ -183,6 +182,14 @@
 		img.reddit					{ content: var(--iconReddit); }
 		img.steam					{ content: var(--iconSteam); }
 		img.twitter					{ content: var(--iconTwitter); }
+		@media only screen and (max-width: 301px){
+			body { font-size: 0.8em; }
+			h1 { font-size: 1.5em }
+			ul.linklist				{ padding: 0.8em 0.3em; }
+			td.left ul.linklist		{ padding-left: 0; padding-right: 0.5em; }
+			td.right ul.linklist	{ padding-right: 0; }
+			td.left ul.linklist li::before { content: ""; width: 0; height: 0; }
+		}
 		@media only screen and (min-width: 701px){
 			body {
 				grid-template-columns: 1fr 20em; grid-template-rows: 20em auto 20px;
@@ -192,10 +199,10 @@
 					"footer feed";
 			}
 			aside { display: inherit; }
-			section#links			{ margin-top: 10em; }
+			section#links { margin-top: 10em; }
 		}
 		@media only screen and (mind-width: 901px){
-			section#links			{ margin-top: 15%; }
+			section#links { margin-top: 15%; }
 		}
 	</style>
 </head>
@@ -204,7 +211,7 @@
 		<div id="portrait">&nbsp;</div>
 		<div>
 			<h1>Kai Boenke</h1>
-			<h4 id="tagline"></h4>
+			<h4 id="tagline">Cool guy.</h4>
 		</div>
 	</header>
 	<section id="links">
@@ -223,7 +230,7 @@
 			</td>
 		</tr></table>
 	</section>
-	<footer><img style="background-image: var(--badgeThree14);" width="80" height="15" onClick="window.location = 'http://three14.us/';" /></footer>
+	<footer><img style="background-image: var(--badgeThree14);" width="80" height="15" onClick="window.location='http://three14.us/';"></footer>
 	<aside id="feed"></aside>
 </body>
 </html>
