@@ -17,6 +17,7 @@
 	<meta name="theme-color" content="#121212" media="(prefers-color-scheme: dark)">
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 	<link rel="icon" href="favicon.svg">
+	<link rel="mask-icon" href="favicon.svg">
 	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.2.min.js"></script>
 	<script>
 		var feedData = [];
@@ -173,7 +174,7 @@
 		li#link_Linkedin::before	{ background-image: var(--iconLinkedin); }
 		li#link_Three14::after		{ background-image: var(--iconThree14); background-size: contain; }
 		li#link_Twitter::before		{ background-image: var(--iconTwitter); }
-		footer						{ grid-area: footer; margin: auto auto 0.2em 0.2em; }
+		footer						{ grid-area: footer; background-image: var(--badgeThree14); background-repeat: no-repeat; background-position: bottom 5px left 3px; }
 		aside						{ grid-area: feed; overflow: hidden; display: none; }
 		ul.feed						{ margin: 0.2em; padding: 0; list-style-type: none; font-size: 0.9em; }
 		li.feedItem					{ padding-left: 1em; position: relative; }
@@ -230,7 +231,7 @@
 			</td>
 		</tr></table>
 	</main>
-	<footer><img style="background-image: var(--badgeThree14);" width="80" height="15" onClick="window.location='http://three14.us/';"></footer>
+	<footer onClick="window.location='http://three14.us/';"></footer>
 	<aside id="feed"></aside>
 </body>
 </html>
